@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="start-page">
+            <h1>Inscription</h1>
+            <label for="pseudo">Pseudo :</label>
+            <input type="text" id="pseudo" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" required>
+            <button id="start-quiz">Lancer le Quiz</button>
+        </div>
+
+        <div id="quiz-page" style="display: none;">
+            <div id="timer">Temps : 00:00</div>
+            <div id="question-container">
+                <!-- La question et les réponses seront injectées ici par JavaScript -->
+            </div>
+            <button id="prev-question" style="display: none;">Précédent</button>
+            <button id="next-question">Suivant</button>
+            <button id="submit-quiz" style="display: none;">Soumettre</button>
+        </div>
+
+        <div id="result-page" style="display: none;">
+            <h2>Résultats</h2>
+            <p>Temps total : <span id="final-time"></span></p>
+            <p>Bonnes réponses : <span id="correct-answers"></span>/10</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[
+    {
+        "text": "Quelle est la capitale de la France ?",
+        "img": "images/ocean.png",
+        "choices": ["Paris", "Lyon", "Marseille"],
+        "correct": 0
+    }
+]
