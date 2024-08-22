@@ -1,6 +1,24 @@
 [
     {
         "text": "Quelle est la capitale de la France ?",
+        "img": "images/paris.png",
+        "choices": ["Paris", "Lyon", "Marseille"],
+        "correct": 0
+    },
+    {
+        "text": "fdsfsfsdf ?",
+        "img": "images/ocean.png",
+        "choices": ["Paris", "Lyon", "Marseille"],
+        "correct": 0
+    },
+    {
+        "text": "jtyjjt   hrhssd g ggr ?",
+        "img": "images/paris.png",
+        "choices": ["Paris", "Lyon", "Marseille"],
+        "correct": 0
+    },
+    {
+        "text": "dqsdq sfdsf sf dsfsf s f ?",
         "img": "images/ocean.png",
         "choices": ["Paris", "Lyon", "Marseille"],
         "correct": 0

@@ -40,8 +40,13 @@ function loadQuestion() {
     const question = questions[currentQuestion];
     const questionContainer = document.getElementById("question-container");
 
+    // Mise à jour de l'image de fond pour chaque question
+    document.getElementById("quiz-page").style.backgroundImage = `url('${question.img}')`;
+
+     // Afficher le numéro de la question
+     document.getElementById("question-number").textContent = `Question ${currentQuestion + 1} sur ${questions.length}`;
+
     questionContainer.innerHTML = `
-        <img src="${question.img}" alt="Image Question">
         <p>${question.text}</p>
         <div class="toggle-button-group">
             ${question.choices.map((choice, index) => `
@@ -72,6 +77,9 @@ function prevQuestion() {
     }
 }
 
+// Charger les questions lors du chargement de la page
+window.onload = loadQuestions;
+
 function saveAnswer() {
     const selectedOption = document.querySelector('input[name="choice"]:checked');
     if (selectedOption) {
@@ -98,7 +106,8 @@ function submitQuiz() {
     document.getElementById("result-page").style.display = "block";
 
     document.getElementById("final-time").textContent = finalTime;
-    document.getElementById("correct-answers").textContent = correctAnswers;
+    document.getElementById("correct-answers").textContent = `${correctAnswers} questions sur ${questions.length}`;
+
 
     saveResults(finalTime, correctAnswers);
 }
