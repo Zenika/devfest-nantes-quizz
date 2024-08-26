@@ -20,6 +20,7 @@ h1, h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     text-align: center;
+    padding-bottom: 16px;
 }
 
 label, input {
@@ -93,7 +94,7 @@ button:hover {
 }
 
 #start-page {
-    background-image: url('images/ocean.png');
+    background-image: url('images/bg.png');
 }
 
 /* 
@@ -103,25 +104,25 @@ button:hover {
 */
 
 #result-page {
-    background-image: url('images/paris.png');
+    background-image: url('images/bg.png');
 }
 
 .form-container {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
 }
 
 .question-container {
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
 }
 
 .result-container {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
@@ -155,6 +156,16 @@ button:hover {
     font-weight: 700;
     text-align: left;
     margin-bottom: 0px;
+}
+
+#final-time {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#correct-answers {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .toggle-button-group {
