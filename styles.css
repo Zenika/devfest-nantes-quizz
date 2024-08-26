@@ -45,7 +45,7 @@ button:hover {
 }
 
 .svg-container {
-    position: fixed; /* Fixe le SVG en haut de la page */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%; /* Prend toute la largeur de la page */
