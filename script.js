@@ -44,10 +44,10 @@ function loadQuestion() {
     document.getElementById("quiz-page").style.backgroundImage = `url('${question.img}')`;
 
      // Afficher le numéro de la question
-     document.getElementById("question-number").textContent = `Question ${currentQuestion + 1} sur ${questions.length}`;
+     // document.getElementById("question-number").textContent = `Question ${currentQuestion + 1} sur ${questions.length}`;
 
     questionContainer.innerHTML = `
-        <p>${question.text}</p>
+        <p>Question ${currentQuestion + 1} sur ${questions.length}<br/>${question.text}</p>
         <div class="toggle-button-group">
             ${question.choices.map((choice, index) => `
                 <input type="radio" id="choice-${index}" name="choice" value="${index}" ${answers[currentQuestion] === index ? 'checked' : ''}>
@@ -78,7 +78,7 @@ function prevQuestion() {
 }
 
 // Charger les questions lors du chargement de la page
-window.onload = loadQuestions;
+// window.onload = loadQuestions;
 
 function saveAnswer() {
     const selectedOption = document.querySelector('input[name="choice"]:checked');
@@ -116,7 +116,7 @@ function saveResults(finalTime, correctAnswers) {
     const pseudo = document.getElementById("pseudo").value;
     const email = document.getElementById("email").value;
 
-    fetch('https://script.google.com/macros/s/AKfycbxOOHaOolAiUrlV-Kjul_O3ZbDDnPEvTI30IwBVktkVHHPj3CefYJCg0pazRggC-RyJ/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbxTEB6gQX3PIAYtNPt0zuRH46cGpt_JhirIm2Xx2zGqt330nMQjbUJzQmM5chtiumvG/exec', {
         mode: 'no-cors', // Test serveur local
         method: 'POST',
         headers: {
@@ -126,7 +126,8 @@ function saveResults(finalTime, correctAnswers) {
             pseudo: pseudo,
             email: email,
             time: finalTime,
-            correctAnswers: correctAnswers
+            correctAnswers: correctAnswers,
+            date: new Date().toISOString()
         }),
     })
     .then(response => response.json())
