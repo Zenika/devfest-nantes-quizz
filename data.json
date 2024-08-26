@@ -1,26 +1,74 @@
 [
     {
-        "text": "Quelle est la capitale de la France ?",
-        "img": "images/paris.png",
-        "choices": ["Paris", "Lyon", "Marseille"],
+        "text": "Quel a été le diagnostic des médecins concernant Clara Dubois ?",
+        "img": "images/1.png",
+        "choices": ["Dépression légère", "Stress post-traumatique aigu", "Trouble de la personnalité multiple"],
+        "correct": 1
+    },
+    {
+        "text": "Comment les voisins ont-ils réagi aux hurlements provenant de la maison d’Andrew ?",
+        "img": "images/2.png",
+        "choices": ["Ils ont appelé immédiatement la police", "Ils n'ont pas osé intervenir", "Ils ont tenté de pénétrer dans la maison"],
+        "correct": 1
+    },
+    {
+        "text": "Qu'est-ce qui a causé les troubles de Maxime avant sa disparition ?",
+        "img": "images/3.png",
+        "choices": ["Une rupture amoureuse", "Un accident de voiture", "Un virus informatique"],
+        "correct": 2
+    },
+    {
+        "text": "Quel est le nom du projet mystérieux découvert par Julien ?",
+        "img": "images/4.png",
+        "choices": ["Projet Hélios", "Projet Orion", "Projet Titan"],
         "correct": 0
     },
     {
-        "text": "fdsfsfsdf ?",
-        "img": "images/ocean.png",
-        "choices": ["Paris", "Lyon", "Marseille"],
+        "text": "Qu'a découvert l'équipe de développeurs du cimetière sur leurs écrans ?",
+        "img": "images/5.png",
+        "choices": ["Des photos d'archives", "Des images floues de visages inconnus", "Des messages d'outre-tombe réclamant justice"],
+        "correct": 2
+    },
+    {
+        "text": "Sur l'Île de Nantes, quel type de phénomènes les résidents ont-ils rapporté autour de l'usine après les événements ?",
+        "img": "images/6.png",
+        "choices": ["L'apparitions de silhouettes fantomatiques", "Des ondes radio perturbées", "Des murmures étranges"],
         "correct": 0
     },
     {
-        "text": "jtyjjt   hrhssd g ggr ?",
-        "img": "images/paris.png",
-        "choices": ["Paris", "Lyon", "Marseille"],
-        "correct": 0
+        "text": "Quel programme a été intégré au supercalculateur de l'université de Nantes ?",
+        "img": "images/7.png",
+        "choices": ["Un logiciel de cryptographie avancée", "Un programme basé sur des textes occultes", "Un algorithme de simulation météorologique"],
+        "correct": 1
     },
     {
-        "text": "dqsdq sfdsf sf dsfsf s f ?",
-        "img": "images/ocean.png",
-        "choices": ["Paris", "Lyon", "Marseille"],
+        "text": "Quels phénomènes étranges ont commencé à se produire après la numérisation du manuscrit découvert dans le Château des Ducs de Bretagne ?",
+        "img": "images/8.png",
+        "choices": ["Des livres volants et des lumières clignotantes", "Des coupures de courant et des tempêtes soudaines", "Des plantages logiciels et des murmures inquiétants"],
+        "correct": 2
+    },
+    {
+        "text": "Quel est le nom du casque technologique utilisé par Ayoub ?",
+        "img": "images/9.png",
+        "choices": ["MindBoost", "NeuroBoost", "BrainWave"],
+        "correct": 1
+    },
+    {
+        "text": "Quel était le projet sur lequel les développeurs de Noxis Games travaillaient avant leur disparition ?",
+        "img": "images/10.png",
+        "choices": ["Un simulateur de vol", "Un logiciel de comptabilité", "Un jeu vidéo d'horreur"],
+        "correct": 2
+    },
+    {
+        "text": "Quels pays, en dehors de la France, ont rapporté des incidents liés au filtre 'Time Traveler' de l'application Eternal Love ?",
+        "img": "images/11.png",
+        "choices": ["Espagne et Italie", "Allemagne et Australie", "Japon et Brésil"],
+        "correct": 1
+    },
+    {
+        "text": "Quel lien a été découvert entre l'entreprise Ecotech Solutions et les technologies de contrôle mental ?",
+        "img": "images/12.png",
+        "choices": ["Les algorithmes de Gaïa contiennent des éléments du supercalculateur développé en 1974 à l'université de Nantes", "Les dirigeants d'Ecotech Solutions ont assisté à des conférences secrètes sur la manipulation mentale", "Ecotech Solutions a acquis une machine capable de simuler des voix humaines"],
         "correct": 0
     }
 ]
