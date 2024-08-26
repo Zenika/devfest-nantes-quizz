@@ -31,17 +31,28 @@ input {
 
 button {
     width: 100%;
-    padding: 12px;
+    padding: 16px;
     background-color: #ff0000;
     color: white;
-    border: none;
+    border: 0px solid rgba(2252, 238, 7, 1);
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: rgba(252, 238, 7, 1);
+    color: black;
+    border: 0px solid rgba(2252, 238, 7, 1);
+}
+
+.buttons-group {
+    padding-top: 32px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 16px;
 }
 
 .svg-container {
@@ -96,19 +107,20 @@ button:hover {
     margin: 20px;
     border-radius: 8px;
     /* width: 100%; */
+    height: 60%;
 }
 
 /* Espacement entre les éléments du formulaire */
 .form-container label, 
 .form-container input, 
 .form-container button {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     width: 320px;
 }
 
 /* Styliser les inputs */
 .form-container input {
-    padding: 10px;
+    padding: 12px;
     border-radius: 4px;
     border: none;
     width: 100%;
@@ -134,12 +146,13 @@ button:hover {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
-    font-size: larger;
+    font-size: large;
     background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
     /* width: 100%; */
+    height: 60%;
 }
 
 /* #question-container img {
@@ -170,6 +183,7 @@ button:hover {
     margin: 20px;
     border-radius: 8px;
     /* width: 100%; */
+    height: 60%;
 }
 
 .toggle-button-group {
@@ -188,7 +202,7 @@ button:hover {
     -moz-box-sizing: border-box;
     padding: 16px;
     border-radius: 6px;
-    border: 1px solid rgba(2252, 238, 7, 0.7);
+    border: 1px solid rgba(2252, 238, 7, 0.3);
     color: rgb(252, 238, 7);
     text-align: center;
     cursor: pointer;
@@ -198,9 +212,11 @@ button:hover {
 .toggle-button-group input[type="radio"]:checked + .toggle-button {
     background-color: rgba(252, 238, 7, 1);
     color: black;
-    border: 0px solid #ccc;
+    border: 1px solid rgba(2252, 238, 7, 1);
 }
 
 .toggle-button:hover {
-    background-color: #e7e7e7;
+    background-color: rgba(252, 238, 7, 1);
+    color: black;
+    border: 1px solid rgba(2252, 238, 7, 1);
 }
