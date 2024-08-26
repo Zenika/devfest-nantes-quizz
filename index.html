@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Zenika Devfest Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,13 +20,13 @@
         <div id="start-page" class="page">
             <div class="form-container">
                 <h1>Inscription</h1>
-                <label for="pseudo">Pseudo</label>
+                <label for="pseudo">Votre pseudo</label>
                 <input type="text" id="pseudo" placeholder="Entrez votre pseudo" required>
                 <p>&nbsp;</p>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Entrez votre email" required>
+                <label for="email">Votre adresse email</label>
+                <input type="email" id="email" placeholder="Entrez votre adresse email" required>
                 <div class="buttons-group">
-                    <button id="start-quiz">Lancer le Quiz</button>
+                    <button id="start-quiz">Commencer le Quiz</button>
                 </div>
             </div>
         </div>
@@ -34,22 +35,24 @@
             <div class="question-container">
                 <div id="timer">Temps : 00:00</div>
                 <!-- <div id="question-number" class="question-info"></div> -->
-                <div id="question-container">
+                <div id="question">
                     <!-- La question et les réponses seront injectées ici par JavaScript -->
                 </div>
                 <div class="buttons-group">
                     <button id="prev-question" style="display: none;">Précédente</button>                    
                     <button id="next-question">Suivante</button>
-                    <button id="submit-quiz" style="display: none;">Soumettre mes réponses</button>
+                    <button id="submit-quiz" style="display: none;">Soumettre !</button>
                 </div>
             </div>
         </div>
 
         <div id="result-page" class="page" style="display: none;">
             <div class="result-container">
-                <h2>Résultats</h2>
+                <h2>Merci pour votre participation !</h2>
                 <p>Temps total : <span id="final-time"></span></p>
                 <p>Vous avez répondu correctement à <span id="correct-answers"></span></p>
+                <p>&nbsp;</p>
+                <p>Nous vous contacterons si vous faîtes parti des gagnant(e)s !</p>
             </div>
         </div>
     </main>

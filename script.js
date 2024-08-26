@@ -38,7 +38,7 @@ function startQuiz() {
 
 function loadQuestion() {
     const question = questions[currentQuestion];
-    const questionContainer = document.getElementById("question-container");
+    const questionContainer = document.getElementById("question");
 
     // Mise à jour de l'image de fond pour chaque question
     document.getElementById("quiz-page").style.backgroundImage = `url('${question.img}')`;
@@ -47,7 +47,8 @@ function loadQuestion() {
      // document.getElementById("question-number").textContent = `Question ${currentQuestion + 1} sur ${questions.length}`;
 
     questionContainer.innerHTML = `
-        <p>Question ${currentQuestion + 1} sur ${questions.length}<br/>${question.text}</p>
+        <p id="question-number">${currentQuestion + 1} sur ${questions.length}</p>
+        <p>${question.text}</p>
         <div class="toggle-button-group">
             ${question.choices.map((choice, index) => `
                 <input type="radio" id="choice-${index}" name="choice" value="${index}" ${answers[currentQuestion] === index ? 'checked' : ''}>
