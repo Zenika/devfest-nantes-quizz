@@ -23,6 +23,7 @@ h1, h2 {
     font-weight: 700;
     text-align: center;
     /* padding-bottom: 16px; */
+    margin-top: 0px;
 }
 
 label, input {
@@ -88,7 +89,7 @@ button:hover {
     width: 100vw; /* 100% de la largeur de la fenêtre */
     background-size: cover; /* Couvrir toute la surface */
     background-position: center; /* Centrer l'image */
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -107,7 +108,7 @@ button:hover {
 */
 
 #result-page {
-    background-image: url('images/bg.png');
+    background-image: url('images/bg2.png');
 }
 
 .container {
@@ -122,24 +123,24 @@ button:hover {
 .form-container {
     max-width: 380px;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    margin: 20px;
+    padding: 24px;
+    margin: 24px;
     border-radius: 8px;
 }
 
 .question-container {
     max-width: 380px;
     background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
-    padding: 20px;
-    margin: 20px;
+    padding: 24px;
+    margin: 24px;
     border-radius: 8px;
 }
 
 .result-container {
     max-width: 380px;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    margin: 20px;
+    padding: 24px;
+    margin: 24px;
     border-radius: 8px;
 }
 
