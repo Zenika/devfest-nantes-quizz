@@ -159,7 +159,15 @@ button:hover {
 }
 
 #question-number {
+    color:  rgba(252, 238, 7, 1);
     font-size: 0.7rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+#question-text {
+    font-size: 1rem;
     font-weight: 700;
     text-align: left;
     margin-bottom: 0px;

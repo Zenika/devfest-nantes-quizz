@@ -48,7 +48,7 @@ function loadQuestion() {
 
     questionContainer.innerHTML = `
         <p id="question-number">${currentQuestion + 1} sur ${questions.length}</p>
-        <p>${question.text}</p>
+        <p id="question-text">${question.text}</p>
         <div class="toggle-button-group">
             ${question.choices.map((choice, index) => `
                 <input type="radio" id="choice-${index}" name="choice" value="${index}" ${answers[currentQuestion] === index ? 'checked' : ''}>
