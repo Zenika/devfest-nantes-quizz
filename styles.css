@@ -12,19 +12,22 @@ body, html {
 }
 
 p {
+    font-size: 0.9rem;
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
 
 h1, h2 {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
 }
 
 label, input {
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
     font-weight: 400;
     display: block;
     width: 100%;
@@ -47,7 +50,7 @@ button {
     border: 0px solid rgba(2252, 238, 7, 1);
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -85,7 +88,7 @@ button:hover {
     width: 100vw; /* 100% de la largeur de la fenêtre */
     background-size: cover; /* Couvrir toute la surface */
     background-position: center; /* Centrer l'image */
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -107,7 +110,17 @@ button:hover {
     background-image: url('images/bg.png');
 }
 
+.container {
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 .form-container {
+    max-width: 380px;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     margin: 20px;
@@ -115,6 +128,7 @@ button:hover {
 }
 
 .question-container {
+    max-width: 380px;
     background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
     padding: 20px;
     margin: 20px;
@@ -122,21 +136,13 @@ button:hover {
 }
 
 .result-container {
+    max-width: 380px;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
 }
 
-/* Espacement entre les éléments du formulaire */
-.form-container label, 
-.form-container input, 
-.form-container button {
-    margin-bottom: 8px;
-    width: 320px;
-}
-
-/* Styliser les inputs */
 .form-container input {
     padding: 12px;
     border-radius: 4px;
@@ -145,26 +151,26 @@ button:hover {
 }
 
 #timer {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 24px;
 }
 
 #question-number {
-    font-size: 13px;
+    font-size: 0.7rem;
     font-weight: 700;
     text-align: left;
     margin-bottom: 0px;
 }
 
 #final-time {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
 #correct-answers {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -181,6 +187,7 @@ button:hover {
 }
 
 .toggle-button {
+    font-size: 1rem;
     box-sizing:border-box;
     -moz-box-sizing: border-box;
     padding: 16px;

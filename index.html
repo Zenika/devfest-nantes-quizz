@@ -18,44 +18,50 @@
 
     <main>
         <div id="start-page" class="page">
-            <div class="form-container">
-                <h1>Inscription</h1>
-                <p>L'objectif de ce quiz est de trouver le maximum de bonnes réponses en un minimum de temps.</p>
-                <p>&nbsp;</p>
-                <label for="pseudo">Votre pseudo</label>
-                <input type="text" id="pseudo" placeholder="Entrez votre pseudo" required>
-                <p>&nbsp;</p>
-                <label for="email">Votre adresse email</label>
-                <input type="email" id="email" placeholder="Entrez votre adresse email" required>
-                <div class="buttons-group">
-                    <button id="start-quiz">Commencer le Quiz</button>
+            <div class="container">
+                <div class="form-container">
+                    <h1>Inscription</h1>
+                    <p>L'objectif de ce quiz est de trouver le maximum de bonnes réponses en un minimum de temps.</p>
+                    <p>&nbsp;</p>
+                    <label for="pseudo">Votre pseudo</label>
+                    <input type="text" id="pseudo" placeholder="Entrez votre pseudo" required>
+                    <p>&nbsp;</p>
+                    <label for="email">Votre adresse email</label>
+                    <input type="email" id="email" placeholder="Entrez votre adresse email" required>
+                    <div class="buttons-group">
+                        <button id="start-quiz">Commencer le Quiz</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="quiz-page" class="page" style="display: none;">
-            <div class="question-container">
-                <div id="timer">Temps : 00:00</div>
-                <!-- <div id="question-number" class="question-info"></div> -->
-                <div id="question">
-                    <!-- La question et les réponses seront injectées ici par JavaScript -->
-                </div>
-                <div class="buttons-group">
-                    <button id="prev-question" style="display: none;">Précédente</button>                    
-                    <button id="next-question">Suivante</button>
-                    <button id="submit-quiz" style="display: none;">Soumettre !</button>
+            <div class="container">
+                <div class="question-container">
+                    <div id="timer">Temps : 00:00</div>
+                    <!-- <div id="question-number" class="question-info"></div> -->
+                    <div id="question">
+                        <!-- La question et les réponses seront injectées ici par JavaScript -->
+                    </div>
+                    <div class="buttons-group">
+                        <button id="prev-question" style="display: none;">Précédente</button>                    
+                        <button id="next-question">Suivante</button>
+                        <button id="submit-quiz" style="display: none;">Soumettre !</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div id="result-page" class="page" style="display: none;">
-            <div class="result-container">
-                <h2>Merci pour votre participation !</h2>
-                <p>&nbsp;</p>
-                <p>Temps total : <span id="final-time"></span></p>
-                <p>Vous avez répondu correctement à<br/><span id="correct-answers"></span></p>
-                <p>&nbsp;</p>
-                <p>Nous vous contacterons si vous faîtes parti des gagnant(e)s !</p>
+            <div class="container">
+                <div class="result-container">
+                    <h2>Merci pour votre participation !</h2>
+                    <p>&nbsp;</p>
+                    <p>Temps total : <span id="final-time"></span></p>
+                    <p>Vous avez répondu correctement à<br/><span id="correct-answers"></span></p>
+                    <p>&nbsp;</p>
+                    <p>Nous vous contacterons si vous faîtes parti des gagnant(e)s !</p>
+                </div>
             </div>
         </div>
     </main>
