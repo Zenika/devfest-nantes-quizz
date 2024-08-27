@@ -95,7 +95,7 @@ button:hover {
     align-items: center;
     align-content: center;
     color: white;
-    transition: background-image 0.5s ease-in-out;
+    /* transition: background-image 0.5s ease-in-out; */
 }
 
 #start-page {

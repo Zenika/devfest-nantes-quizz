@@ -66,9 +66,9 @@
         "correct": 1
     },
     {
-        "text": "Quel lien a été découvert entre l'entreprise Ecotech Solutions et les technologies de contrôle mental ?",
+        "text": "Quelle est l'origine des technologies suspectées dans Gaïa ?",
         "img": "images/12.png",
-        "choices": ["Les algorithmes de Gaïa contiennent des éléments du supercalculateur développé en 1974 à l'université de Nantes", "Les dirigeants d'Ecotech Solutions ont assisté à des conférences secrètes sur la manipulation mentale", "Ecotech Solutions a acquis une machine capable de simuler des voix humaines"],
-        "correct": 0
+        "choices": ["Un programme de jeu vidéo populaire", "Des recherches médicales récentes", "Des recherches univeristaires dans les années 1970"],
+        "correct": 2
     }
 ]
