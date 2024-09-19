@@ -4,19 +4,32 @@ let answers = [];
 let startTime;
 let timerInterval;
 
+const KEY = "Zenika c'est super"
+
 document.getElementById("start-quiz").addEventListener("click", startQuiz);
 document.getElementById("next-question").addEventListener("click", nextQuestion);
 document.getElementById("prev-question").addEventListener("click", prevQuestion);
 document.getElementById("submit-quiz").addEventListener("click", submitQuiz);
 
 // Charger les questions depuis data.json
-fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-        questions = data;
-        answers = Array(questions.length).fill(null);
-    })
-    .catch(error => console.error('Error loading questions:', error));
+fetch('data-cypher')
+.then(response => response.text())
+.then(data => {
+    console.log("data : ", data)
+    let json = b64DecodeUnicode(data)
+    console.log("json : ", json)
+    questions = JSON.parse(json);
+    answers = Array(questions.length).fill(null);
+})
+.catch(error => console.error('Error loading questions:', error));
+
+function b64DecodeUnicode(str) {
+    // Going backwards: from bytestream, to percent-encoding, to original string.
+    console.log("str : ", str)
+    return decodeURIComponent(atob(str).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+}    
 
 function startQuiz() {
     const pseudo = document.getElementById("pseudo").value;
