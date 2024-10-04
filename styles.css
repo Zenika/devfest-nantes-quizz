@@ -11,6 +11,14 @@ body, html {
     box-sizing: border-box;
 }
 
+#intro {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-block-start: 32px;
+    margin-block-end: 32px;
+
+}
+
 p {
     font-size: 0.9rem;
     margin-block-start: 0px;
