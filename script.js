@@ -3,6 +3,7 @@ let currentQuestion = 0;
 let answers = [];
 let startTime;
 let timerInterval;
+let quizQuestions = []; // Pour stocker les 15 questions sélectionnées
 
 document.getElementById("start-quiz").addEventListener("click", startQuiz);
 document.getElementById("next-question").addEventListener("click", nextQuestion);
@@ -14,9 +15,39 @@ fetch('data.json')
     .then(response => response.json())
     .then(data => {
         questions = data;
-        answers = Array(questions.length).fill(null);
+        prepareQuizQuestions(); // Préparer les 15 questions pour le quiz
+        answers = Array(quizQuestions.length).fill(null);
     })
     .catch(error => console.error('Error loading questions:', error));
+
+function prepareQuizQuestions() {
+    // Exclure la dernière question du choix aléatoire
+    const lastQuestion = questions[questions.length - 1];
+    const otherQuestions = questions.slice(0, -1);
+    
+    // Mélanger les questions
+    const shuffledQuestions = otherQuestions.sort(() => 0.5 - Math.random());
+
+    // Sélectionner les 14 premières questions
+    const selectedQuestions = shuffledQuestions.slice(0, 14);
+
+    // Mélanger l'ordre des 14 questions sélectionnées
+    quizQuestions = [...selectedQuestions.sort(() => 0.5 - Math.random()), lastQuestion];
+}
+
+// Mélanger les choix de réponses tout en conservant la bonne réponse
+function shuffleChoices(question) {
+    // Associer chaque choix à son index d'origine
+    const choicesWithIndices = question.choices.map((choice, index) => ({
+        choice: choice,
+        index: index
+    }));
+
+    // Mélanger les choix
+    const shuffledChoices = choicesWithIndices.sort(() => 0.5 - Math.random());
+
+    return shuffledChoices;
+}
 
 function startQuiz() {
     const pseudo = document.getElementById("pseudo").value;
@@ -37,20 +68,20 @@ function startQuiz() {
 }
 
 function loadQuestion() {
-    const question = questions[currentQuestion];
+    const question = quizQuestions[currentQuestion]; // Utiliser les questions sélectionnées
     const questionContainer = document.getElementById("question");
+
+    // Mélanger les choix de réponses
+    const shuffledChoices = shuffleChoices(question);
 
     // Mise à jour de l'image de fond pour chaque question
     document.getElementById("quiz-page").style.backgroundImage = `url('${question.img}')`;
 
-     // Afficher le numéro de la question
-     // document.getElementById("question-number").textContent = `Question ${currentQuestion + 1} sur ${questions.length}`;
-
     questionContainer.innerHTML = `
-        <p id="question-number">${currentQuestion + 1} sur ${questions.length}</p>
+        <p id="question-number">${currentQuestion + 1} sur ${quizQuestions.length}</p>
         <p id="question-text">${question.text}</p>
         <div class="toggle-button-group">
-            ${question.choices.map((choice, index) => `
+            ${shuffledChoices.map(({ choice, index }) => `
                 <input type="radio" id="choice-${index}" name="choice" value="${index}" ${answers[currentQuestion] === index ? 'checked' : ''}>
                 <label for="choice-${index}" class="toggle-button">${choice}</label>
             `).join('')}
@@ -58,13 +89,13 @@ function loadQuestion() {
     `;
 
     document.getElementById("prev-question").style.display = currentQuestion > 0 ? 'inline' : 'none';
-    document.getElementById("next-question").style.display = currentQuestion < questions.length - 1 ? 'inline' : 'none';
-    document.getElementById("submit-quiz").style.display = currentQuestion === questions.length - 1 ? 'inline' : 'none';
+    document.getElementById("next-question").style.display = currentQuestion < quizQuestions.length - 1 ? 'inline' : 'none';
+    document.getElementById("submit-quiz").style.display = currentQuestion === quizQuestions.length - 1 ? 'inline' : 'none';
 }
 
 function nextQuestion() {
     saveAnswer();
-    if (currentQuestion < questions.length - 1) {
+    if (currentQuestion < quizQuestions.length - 1) {
         currentQuestion++;
         loadQuestion();
     }
@@ -77,9 +108,6 @@ function prevQuestion() {
         loadQuestion();
     }
 }
-
-// Charger les questions lors du chargement de la page
-// window.onload = loadQuestions;
 
 function saveAnswer() {
     const selectedOption = document.querySelector('input[name="choice"]:checked');
@@ -100,15 +128,14 @@ function submitQuiz() {
     saveAnswer();
     clearInterval(timerInterval);
 
-    const correctAnswers = answers.filter((answer, index) => answer === questions[index].correct).length;
+    const correctAnswers = answers.filter((answer, index) => answer === quizQuestions[index].correct).length;
     const finalTime = document.getElementById("timer").textContent.split(" : ")[1];
 
     document.getElementById("quiz-page").style.display = "none";
     document.getElementById("result-page").style.display = "block";
 
     document.getElementById("final-time").textContent = finalTime;
-    document.getElementById("correct-answers").textContent = `${correctAnswers} questions sur ${questions.length}`;
-
+    document.getElementById("correct-answers").textContent = `${correctAnswers} questions sur ${quizQuestions.length}`;
 
     saveResults(finalTime, correctAnswers);
 }
@@ -135,4 +162,3 @@ function saveResults(finalTime, correctAnswers) {
     .then(data => console.log('Success:', data))
     .catch(error => console.error('Error:', error));
 }
-

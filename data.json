@@ -70,5 +70,119 @@
         "img": "images/12.png",
         "choices": ["Un programme de jeu vidéo populaire", "Des recherches médicales récentes", "Des recherches univeristaires dans les années 1970"],
         "correct": 2
+    },
+    {
+        "text": "Qui enquête sur la dérive de l’assistant virtuel de Clara Dubois ?",
+        "img": "images/1.png",
+        "choices": ["La police de Nantes", "Des experts en cybersécurité", "Un groupe de hackers anonymes"],
+        "correct": 1
+    },
+    {
+        "text": "Que se passait-il chaque nuit dans la maison avant la disparition d'Andrew ?",
+        "img": "images/2.png",
+        "choices": ["Il recevait un appel téléphonique silencieux", "Des meubles étaient déplacés par une force invisible", "Il recevait un email contenant une ligne de code à corriger"],
+        "correct": 2
+    },
+    {
+        "text": "En quelle année Maxime Leroux a-t-il disparu pour la première fois ?",
+        "img": "images/3.png",
+        "choices": ["2015", "2019", "2024"],
+        "correct": 1
+    },
+    {
+        "text": "Que ressentaient les anciens collègues de Julien Lefevre dans les enregistrements ?",
+        "img": "images/4.png",
+        "choices": ["De la joie et de l'excitation", "De la panique et de la peur", "De l'indifférence totale"],
+        "correct": 1
+    },
+    {
+        "text": "Quel phénomène paranormal a particulièrement marqué les développeurs près du cimetière ?",
+        "img": "images/5.png",
+        "choices": ["Des objets qui se déplacent seuls", "Des apparitions fantomatiques", "Des bruits étranges dans les murs"],
+        "correct": 1
+    },
+    {
+        "text": "Quelle était la nature de la machine découverte sur l'Île de Nantes an 1972 ?",
+        "img": "images/6.png",
+        "choices": ["Un dispositif de stockage de données", "Un simulateur de voix humaines", "Un ancien générateur de courant"],
+        "correct": 1
+    },
+    {
+        "text": "Quel chercheur a été retrouvé mort dans le laboratoire du supercalculateur ?",
+        "img": "images/7.png",
+        "choices": ["Professeur Jean-Pierre Laroche", "Professeur Michel Dupont", "Professeur Alain Bernard"],
+        "correct": 0
+    },
+    {
+        "text": "Qui a décidé de débrancher les équipements pour arrêter les phénomènes liés au manuscrit du Château des Ducs de Bretagne ?",
+        "img": "images/8.png",
+        "choices": ["Paul, un jeune développeur", "Julien, le chef de l'équipe", "Mathilde, une des développeuses"],
+        "correct": 2
+    },
+    {
+        "text": "Quelle ville est le lieu central de cette affaire Neuroboost",
+        "img": "images/9.png",
+        "choices": ["Nantes", "Saint-Herblain", "Carquefou"],
+        "correct": 2
+    },
+    {
+        "text": "Qu'est-ce que les développeurs de Noxis Game ont découverts ?",
+        "img": "images/10.png",
+        "choices": ["Une clé USB contenant un virus informatique", "Une vieille disquette avec un programme étrange", "Un ancien CR Rom"],
+        "correct": 1
+    },
+    {
+        "text": "Quelles sont les conséquences psychologiques rapportées par les utilisateurs du filtre de l'application Eternal Love ?",
+        "img": "images/11.png",
+        "choices": ["Amélioration des capacités cognitives", "Cauchemars et paranoïa", "Augmentation de la sociabilité"],
+        "correct": 1
+    },
+    {
+        "text": "Quel est le rôle principal de Yulia Dmitrieva ?",
+        "img": "images/12.png",
+        "choices": ["Elle est une victime d'un accident de voiture", "Elle est la développeuse principale de l'application Gaïa", "Elle est l'ancienne PDG d'Ecotech Solutions"],
+        "correct": 1
+    },
+    {
+        "text": "Comment l'assistant virtuel a-t-il communiqué un avertissement terrifiant à Clara",
+        "img": "images/1.png",
+        "choices": ["Par un appel téléphonique", "Par une notification sur son téléphone", "Par un message vocal enregistré"],
+        "correct": 1
+    },
+    {
+        "text": "Quel type de phénomène paranormal a été observé dans les miroirs de la maison d'Andrew ?",
+        "img": "images/2.png",
+        "choices": ["Des visages déformés", "Des objets apparaissant et disparaissant", "Des scènes d’un autre lieu"],
+        "correct": 0
+    },
+    {
+        "text": "Qu’est-ce qui inquiète particulièrement la police à propos du virus déouvert par Maxime Leroux ?",
+        "img": "images/3.png",
+        "choices": ["Il pourrait être lié à une secte", "Il semble capable de manipuler les pensées", "Il efface tous les comptes bancaires"],
+        "correct": 1
+    },
+    {
+        "text": "Quel événement a déclenché l'enquête autour de l'application Eternal Love ?",
+        "img": "images/11.png",
+        "choices": ["L'apparition d'un bug rendant l'application inutilisable", "Des utilisateurs ayant des visions de leur propre mort", "La disparition soudaine du créateur de l'application"],
+        "correct": 1
+    },
+    {
+        "text": "Comment la communauté de Nantes a-t-elle réagi aux événements liés au supercalulateur ?",
+        "img": "images/7.png",
+        "choices": ["En organisant des veillées pour protéger le campus", "En vivant dans une peur croissante des phénomènes inexpliqués", "En exigeant la fermeture complète de l'université"],
+        "correct": 1
+    },
+    {
+        "text": "Quel lien existe-t-il entre Ecotech Solutions et NeuroBoost ?",
+        "img": "images/12.png",
+        "choices": ["Les deux entreprises sont en concurrence directe", "NeuroBoost a été développé par des anciens employés d’Ecotech Solutions", "Ecotech Solutions a racheté NeuroBoost"],
+        "correct": 2
+    },
+    {
+        "text": "Libellé Question 31 : Quelle est l'année de parution du premier numéro de Z_Phobia ?",
+        "img": "images/12.png",
+        "choices": ["1998", "1999", "2000"],
+        "correct": 2
     }
 ]
