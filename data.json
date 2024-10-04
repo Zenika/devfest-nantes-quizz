@@ -1,24 +1,24 @@
 [
     {
-        "text": "Quel a été le diagnostic des médecins concernant Clara Dubois ?",
+        "text": "Quel a été le diagnostic des médecins concernant Clara Da Silva ?",
         "img": "images/1.png",
         "choices": ["Dépression légère", "Stress post-traumatique aigu", "Trouble de la personnalité multiple"],
         "correct": 1
     },
     {
-        "text": "Comment les voisins ont-ils réagi aux hurlements provenant de la maison d’Andrew ?",
+        "text": "Comment les voisins ont-ils réagi aux hurlements provenant de la maison d’Andrew Martin ?",
         "img": "images/2.png",
         "choices": ["Ils ont appelé immédiatement la police", "Ils n'ont pas osé intervenir", "Ils ont tenté de pénétrer dans la maison"],
         "correct": 1
     },
     {
-        "text": "Qu'est-ce qui a causé les troubles de Maxime avant sa disparition ?",
+        "text": "Qu'est-ce qui a causé les troubles de Maxime Bouchard avant sa disparition ?",
         "img": "images/3.png",
         "choices": ["Une rupture amoureuse", "Un accident de voiture", "Un virus informatique"],
         "correct": 2
     },
     {
-        "text": "Quel est le nom du projet mystérieux découvert par Julien ?",
+        "text": "Quel est le nom du projet mystérieux découvert par Julien Cahour ?",
         "img": "images/4.png",
         "choices": ["Projet Hélios", "Projet Orion", "Projet Titan"],
         "correct": 0
@@ -72,25 +72,25 @@
         "correct": 2
     },
     {
-        "text": "Qui enquête sur la dérive de l’assistant virtuel de Clara Dubois ?",
+        "text": "Qui enquête sur la dérive de l’assistant virtuel de Clara Da Silva ?",
         "img": "images/1.png",
         "choices": ["La police de Nantes", "Des experts en cybersécurité", "Un groupe de hackers anonymes"],
         "correct": 1
     },
     {
-        "text": "Que se passait-il chaque nuit dans la maison avant la disparition d'Andrew ?",
+        "text": "Que se passait-il chaque nuit dans la maison avant la disparition d'Andrew Martin ?",
         "img": "images/2.png",
         "choices": ["Il recevait un appel téléphonique silencieux", "Des meubles étaient déplacés par une force invisible", "Il recevait un email contenant une ligne de code à corriger"],
         "correct": 2
     },
     {
-        "text": "En quelle année Maxime Leroux a-t-il disparu pour la première fois ?",
+        "text": "En quelle année Maxime Bouchard a-t-il disparu pour la première fois ?",
         "img": "images/3.png",
         "choices": ["2015", "2019", "2024"],
         "correct": 1
     },
     {
-        "text": "Que ressentaient les anciens collègues de Julien Lefevre dans les enregistrements ?",
+        "text": "Que ressentaient les anciens collègues de Julien Cahour dans les enregistrements ?",
         "img": "images/4.png",
         "choices": ["De la joie et de l'excitation", "De la panique et de la peur", "De l'indifférence totale"],
         "correct": 1
@@ -144,19 +144,19 @@
         "correct": 1
     },
     {
-        "text": "Comment l'assistant virtuel a-t-il communiqué un avertissement terrifiant à Clara",
+        "text": "Comment l'assistant virtuel a-t-il communiqué un avertissement terrifiant à Clara Da Silva ?",
         "img": "images/1.png",
         "choices": ["Par un appel téléphonique", "Par une notification sur son téléphone", "Par un message vocal enregistré"],
         "correct": 1
     },
     {
-        "text": "Quel type de phénomène paranormal a été observé dans les miroirs de la maison d'Andrew ?",
+        "text": "Quel type de phénomène paranormal a été observé dans les miroirs de la maison d'Andrew Martin ?",
         "img": "images/2.png",
         "choices": ["Des visages déformés", "Des objets apparaissant et disparaissant", "Des scènes d’un autre lieu"],
         "correct": 0
     },
     {
-        "text": "Qu’est-ce qui inquiète particulièrement la police à propos du virus déouvert par Maxime Leroux ?",
+        "text": "Qu’est-ce qui inquiète particulièrement la police à propos du virus déouvert par Maxime Bouchard ?",
         "img": "images/3.png",
         "choices": ["Il pourrait être lié à une secte", "Il semble capable de manipuler les pensées", "Il efface tous les comptes bancaires"],
         "correct": 1
@@ -180,7 +180,7 @@
         "correct": 2
     },
     {
-        "text": "Libellé Question 31 : Quelle est l'année de parution du premier numéro de Z_Phobia ?",
+        "text": "Quelle est l'année de parution du premier numéro de Z_Phobia ?",
         "img": "images/12.png",
         "choices": ["1998", "1999", "2000"],
         "correct": 2
