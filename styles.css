@@ -107,20 +107,21 @@ button:hover {
 }
 
 #start-page {
-    background-image: url('images/bg2.png');
+    background-image: url('images/bg_start.jpg');
 }
 
 /* 
 #quiz-page {
-    background-image: url('images/paris.png');
+    background-image: url('images/paris.jpg');
 }
 */
 
 #result-page {
-    background-image: url('images/bg2.png');
+    background-image: url('images/bg_end.jpg');
 }
 
 .container {
+    margin-top: 72px;
     width: 100%;
     display: flex;
     justify-content: center;
